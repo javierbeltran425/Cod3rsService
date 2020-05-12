@@ -13,14 +13,14 @@ public class RestApi {
     @Autowired
     FilesController filesController;
 
-    @CrossOrigin(origins="http://localhost:4200")
+    @CrossOrigin(origins="https://tracodafronttest.herokuapp.com")
     @RequestMapping(value={"files/all"}, method = RequestMethod.GET)
     public Iterable<Files> getAllFiles(){
         return filesController.getAllFiles();
     }
 
-    @CrossOrigin(origins="http://localhost:4200")
-    @RequestMapping(value = {"solicitud/archivo/save"}, method = RequestMethod.POST)
+    @CrossOrigin(origins="https://tracodafronttest.herokuapp.com")
+    @RequestMapping(value = {"solicitud/archivo/save"}, method = RequestMethod.PUT)
     public void saveSolicitudXfoto(@RequestBody MultipartFile dr) throws Exception {
         filesController.saveFotoXSolicitud(dr);
     }
