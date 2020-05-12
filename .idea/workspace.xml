@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cbbd640-e47f-48ce-a9d9-071aad37e008" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tracoda/model/FilesRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tracoda/controller/FilesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tracoda/controller/FilesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tracoda/rest/RestApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tracoda/rest/RestApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +73,7 @@
       <workItem from="1589148037528" duration="859000" />
       <workItem from="1589235745041" duration="2238000" />
       <workItem from="1589251290721" duration="132000" />
-      <workItem from="1589251437860" duration="2627000" />
+      <workItem from="1589251437860" duration="3261000" />
     </task>
     <servers />
   </component>
