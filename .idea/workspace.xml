@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cbbd640-e47f-48ce-a9d9-071aad37e008" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tracoda/model/FilesRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tracoda/model/Files.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tracoda/model/Files.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tracoda/controller/FilesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tracoda/controller/FilesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tracoda/rest/RestApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tracoda/rest/RestApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +73,9 @@
       <workItem from="1589088245039" duration="4219000" />
       <workItem from="1589124849687" duration="7778000" />
       <workItem from="1589148037528" duration="859000" />
-      <workItem from="1589235745041" duration="94000" />
+      <workItem from="1589235745041" duration="2238000" />
+      <workItem from="1589251290721" duration="132000" />
+      <workItem from="1589251437860" duration="2627000" />
     </task>
     <servers />
   </component>
@@ -109,10 +111,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="434" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1589126725863" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1589148911840">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1589251404529">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589148911840" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589251404529" />
     <state width="1367" height="204" key="GridCell.Tab.0.bottom" timestamp="1589131368466">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -153,10 +155,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="499" y="142" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1589129185435" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1589148139730">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1589251335599">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589148139730" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589251335599" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1589089508849">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
