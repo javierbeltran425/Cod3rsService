@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.math.BigDecimal;
+
 public class FilesController {
 
     @Autowired
@@ -30,6 +32,22 @@ public class FilesController {
             fileRepository.save(dbFile);
         } catch (Exception ex) {
             throw new Exception("No se puede guardar el archivo " + fileName + ". Intente nuevamente! Ex:", ex);
+        }
+    }
+
+    public Iterable<Files> getFilesXSolicitudMes(BigDecimal mes) throws Exception {
+        try {
+            return  fileRepository.findByMes(mes);
+        } catch (Exception ex) {
+            throw new Exception("No se pueden recuperar los archivos del mes solicitado.. Intente mas tarde ..  Ex:", ex);
+        }
+    }
+
+    public Iterable<Files> getFilesXSolicitudMesAnio(BigDecimal mes, BigDecimal anio) throws Exception {
+        try {
+            return  fileRepository.findByMesAndAnio(mes,anio);
+        } catch (Exception ex) {
+            throw new Exception("No se pueden recuperar los archivos del mes solicitado.. Intente mas tarde ..  Ex:", ex);
         }
     }
 }

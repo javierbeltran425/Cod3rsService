@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.math.BigDecimal;
+
 @RestController
 @RequestMapping(value="/rest")
 public class RestApi {
@@ -23,5 +25,17 @@ public class RestApi {
     @RequestMapping(value = {"solicitud/archivo/save"}, method = RequestMethod.PUT)
     public void saveSolicitudXfoto(@RequestBody MultipartFile dr) throws Exception {
         filesController.saveFotoXSolicitud(dr);
+    }
+
+    @CrossOrigin(origins="https://tracodafronttest.herokuapp.com")
+    @RequestMapping(value = {"solicitud/archivo/mes"}, method = RequestMethod.GET)
+    public void getSolicitudXmes(@RequestBody BigDecimal mes) throws Exception {
+        filesController.getFilesXSolicitudMes(mes);
+    }
+
+    @CrossOrigin(origins="https://tracodafronttest.herokuapp.com")
+    @RequestMapping(value = {"solicitud/archivo/mesAnio"}, method = RequestMethod.GET)
+    public void getSolicitudXmesAnio(@RequestBody BigDecimal mes, BigDecimal anio) throws Exception {
+        filesController.getFilesXSolicitudMesAnio(mes,anio);
     }
 }
