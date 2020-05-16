@@ -21,7 +21,7 @@ public class RestApi {
         return filesController.getAllFiles();
     }
 
-    @CrossOrigin(origins="https://tracodafronttest.herokuapp.com")
+    @CrossOrigin(origins="https://tracodafronttest.herokuapp.com/")
     @RequestMapping(value = {"solicitud/archivo/save"}, method = RequestMethod.PUT)
     public void saveSolicitudXfoto(@RequestBody MultipartFile dr) throws Exception {
         filesController.saveFotoXSolicitud(dr);
