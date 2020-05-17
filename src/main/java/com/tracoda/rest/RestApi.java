@@ -3,8 +3,10 @@ package com.tracoda.rest;
 import com.tracoda.controller.FilesController;
 import com.tracoda.model.Files;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.math.BigDecimal;
 
@@ -21,11 +23,11 @@ public class RestApi {
         return filesController.getAllFiles();
     }
 
-    @CrossOrigin(origins="https://tracodafronttest.herokuapp.com")
+    /*@CrossOrigin(origins="https://tracodafronttest.herokuapp.com")
     @RequestMapping(value = {"solicitud/archivo/save"}, method = RequestMethod.PUT)
     public void saveSolicitudXfoto(@RequestBody MultipartFile dr) throws Exception {
         filesController.saveFotoXSolicitud(dr);
-    }
+    }*/
 
     //@CrossOrigin(origins="https://tracodafronttest.herokuapp.com")
     @RequestMapping(value = {"solicitud/archivo/mes"}, method = RequestMethod.GET)

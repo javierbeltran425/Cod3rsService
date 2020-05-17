@@ -2,10 +2,7 @@ package com.tracoda.controller;
 
 import com.tracoda.interfaces.FileRepository;
 import com.tracoda.model.Files;
-import org.apache.tomcat.util.http.fileupload.FileUploadException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.StringUtils;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.math.BigDecimal;
 
@@ -16,7 +13,7 @@ public class FilesController {
 
     public Iterable<Files> getAllFiles(){ return fileRepository.findAll(); }
 
-    public void saveFotoXSolicitud(MultipartFile file) throws Exception {
+    /*public void saveFotoXSolicitud(MultipartFile file) throws Exception {
         // Normalize file name
         String fileName = StringUtils.cleanPath(file.getOriginalFilename());
 
@@ -33,7 +30,7 @@ public class FilesController {
         } catch (Exception ex) {
             throw new Exception("No se puede guardar el archivo " + fileName + ". Intente nuevamente! Ex:", ex);
         }
-    }
+    }*/
 
     public Iterable<Files> getFilesXSolicitudMes(BigDecimal mes) throws Exception {
         try {

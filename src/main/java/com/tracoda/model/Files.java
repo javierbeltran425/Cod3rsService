@@ -11,7 +11,7 @@ public class Files implements java.io.Serializable {
     private BigDecimal id;
     private BigDecimal anio;
     private BigDecimal mes;
-    private byte[] contenido;
+    private String contenido;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -55,11 +55,11 @@ public class Files implements java.io.Serializable {
 
     @Column(name="contenido")
 
-    public byte[] getContenido() {
+    public String getContenido() {
         return contenido;
     }
 
-    public void setContenido(byte[] contenido) {
+    public void setContenido(String contenido) {
         this.contenido = contenido;
     }
 }
