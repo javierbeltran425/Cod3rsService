@@ -3,10 +3,7 @@ package com.tracoda.rest;
 import com.tracoda.controller.FilesController;
 import com.tracoda.model.Files;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
 
@@ -29,13 +26,13 @@ public class RestApi {
         filesController.saveFotoXSolicitud(dr);
     }*/
 
-    //@CrossOrigin(origins="https://tracodafronttest.herokuapp.com")
+    @CrossOrigin(origins="https://tracodafronttest.herokuapp.com")
     @RequestMapping(value = {"solicitud/archivo/mes"}, method = RequestMethod.GET)
     public Iterable<Files> getSolicitudXmes(@RequestParam BigDecimal mes) throws Exception {
         return filesController.getFilesXSolicitudMes(mes);
     }
 
-    //@CrossOrigin(origins="https://tracodafronttest.herokuapp.com")
+    @CrossOrigin(origins="https://tracodafronttest.herokuapp.com")
     @RequestMapping(value = {"solicitud/archivo/mesAnio"}, method = RequestMethod.GET)
     public void getSolicitudXmesAnio(@RequestParam BigDecimal mes, BigDecimal anio) throws Exception {
         filesController.getFilesXSolicitudMesAnio(mes,anio);
