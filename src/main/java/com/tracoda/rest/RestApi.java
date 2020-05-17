@@ -33,8 +33,8 @@ public class RestApi {
     }
 
     @CrossOrigin(origins="https://tracodafronttest.herokuapp.com")
-    @RequestMapping(value = {"solicitud/archivo/mesAnio"}, method = RequestMethod.GET)
-    public void getSolicitudXmesAnio(@RequestParam BigDecimal mes, BigDecimal anio) throws Exception {
-        filesController.getFilesXSolicitudMesAnio(mes,anio);
+    @RequestMapping(value = {"solicitud/archivo/anioMes"}, method = RequestMethod.GET)
+    public Iterable<Files> getSolicitudXmesAnio(@RequestParam BigDecimal anio, BigDecimal mes) throws Exception {
+        return filesController.getFilesXSolicitudMesAnio(anio,mes);
     }
 }

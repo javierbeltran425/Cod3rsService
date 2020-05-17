@@ -7,5 +7,5 @@ import java.math.BigDecimal;
 
 public interface FileRepository extends CrudRepository<Files, BigDecimal> {
     public Iterable<Files> findByMes(BigDecimal mes);
-    public Iterable<Files >findByMesAndAnio(BigDecimal mes, BigDecimal anio);
+    public Iterable<Files >findByMesAndAnio(BigDecimal anio, BigDecimal mes);
 }

@@ -40,9 +40,9 @@ public class FilesController {
         }
     }
 
-    public Iterable<Files> getFilesXSolicitudMesAnio(BigDecimal mes, BigDecimal anio) throws Exception {
+    public Iterable<Files> getFilesXSolicitudMesAnio(BigDecimal anio, BigDecimal mes) throws Exception {
         try {
-            return  fileRepository.findByMesAndAnio(mes,anio);
+            return  fileRepository.findByMesAndAnio(anio,mes);
         } catch (Exception ex) {
             throw new Exception("No se pueden recuperar los archivos del mes solicitado.. Intente mas tarde ..  Ex:", ex);
         }
