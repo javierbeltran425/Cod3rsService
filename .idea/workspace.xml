@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4cbbd640-e47f-48ce-a9d9-071aad37e008" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tracoda/interfaces/FileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tracoda/interfaces/FileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tracoda/controller/FilesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tracoda/controller/FilesController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +79,7 @@
       <workItem from="1589469641157" duration="6053000" />
       <workItem from="1589662160566" duration="1495000" />
       <workItem from="1589673491544" duration="2538000" />
-      <workItem from="1589735385659" duration="828000" />
+      <workItem from="1589735385659" duration="971000" />
     </task>
     <servers />
   </component>
