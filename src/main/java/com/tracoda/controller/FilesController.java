@@ -5,6 +5,7 @@ import com.tracoda.model.Files;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.math.BigDecimal;
+import java.util.Optional;
 
 public class FilesController {
 
@@ -31,6 +32,14 @@ public class FilesController {
             throw new Exception("No se puede guardar el archivo " + fileName + ". Intente nuevamente! Ex:", ex);
         }
     }*/
+
+    public Optional<Files> getFilesXSolicitudId(BigDecimal id) throws Exception{
+        try {
+            return  fileRepository.findById(id);
+        } catch (Exception ex) {
+            throw new Exception("No se pueden recuperar los archivos del mes solicitado.. Intente mas tarde ..  Ex:", ex);
+        }
+    }
 
     public Iterable<Files> getFilesXSolicitudMes(BigDecimal mes) throws Exception {
         try {
