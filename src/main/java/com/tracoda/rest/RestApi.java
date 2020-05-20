@@ -26,13 +26,13 @@ public class RestApi {
         filesController.saveFotoXSolicitud(dr);
     }*/
 
-    @CrossOrigin(origins="https://tracodafronttest.herokuapp.com")
+    //@CrossOrigin(origins="https://tracodafronttest.herokuapp.com")
     @RequestMapping(value = {"solicitud/archivo/mes"}, method = RequestMethod.GET)
     public Iterable<Files> getSolicitudXmes(@RequestParam BigDecimal mes) throws Exception {
         return filesController.getFilesXSolicitudMes(mes);
     }
 
-    @CrossOrigin(origins="https://tracodafronttest.herokuapp.com")
+    //@CrossOrigin(origins="https://tracodafronttest.herokuapp.com")
     @RequestMapping(value = {"solicitud/archivo/anioMes"}, method = RequestMethod.GET)
     public Iterable<Files> getSolicitudXmesAnio(@RequestParam BigDecimal anio, BigDecimal mes) throws Exception {
         return filesController.getFilesXSolicitudMesAnio(anio,mes);
